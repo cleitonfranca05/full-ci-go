@@ -3,9 +3,9 @@ on:
   pull_request:
     branches: 
       - develop      
-strategy:
-  matrix:
-    go: ['1.14','1.15','1.16','1.17']
+  strategy:
+    matrix:
+      go: ['1.14','1.15','1.16','1.17']
 jobs: 
   check-application:
     runs-on: ubuntu-latest
